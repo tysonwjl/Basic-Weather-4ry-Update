@@ -17,22 +17,23 @@ main{
 .container{
     box-sizing: border-box;
     width: 50%;
-    background-color: rgb(244, 169, 222);
+    background-color: rgb(153, 143, 199);
     margin: 0;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
+    border: 5px solid rgba(40, 38, 44,0.5);
 }
 .container p{
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    color: white;
+    color: rgb(249, 245, 255);
 }
 
 .title{
     text-align: center;
     font-family: "Quicksand", sans-serif;
-    color: white;
+    color: rgb(249, 245, 255);
     margin: 0;
     padding-top: 1em;
 }
@@ -45,7 +46,7 @@ main{
 }
 
 .measurement{
-    color: white;
+    color: rgb(249, 245, 255);
     margin: 30px auto;
     padding: 0;
     width: 60px;
@@ -74,7 +75,7 @@ main{
 
 
 #cityInput{
-    color: white;
+    color: rgb(249, 245, 255);
     width: 70%;
     border: none;
     border-bottom: 2px solid rgba(255, 255, 255, 0.8);
@@ -90,7 +91,7 @@ main{
     margin-left: 10px;
     border-radius: 2px;
     border: 2px solid rgba(255, 255, 255, 0.8);
-    color: white;
+    color: rgb(249, 245, 255);
     font-family: "quicksand", sans-serif;
     transition: all 0.4s ease-in-out;
 }
@@ -127,25 +128,26 @@ main{
     flex-direction: column;
     transition: all 1s cubic-bezier(0, 1, 0, 1);
     transform: translateY(auto);
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 31.75%;
-    border:rgb(255, 210, 241) 1px solid;
+    background-color: rgba(212, 194, 252, 0.3);
+    border-radius: 4px;
+    width: 31.4%;
+    border:rgba(255,255,255,0.3) 2px solid;
     
 
 
 }
 .card h2{
     margin-bottom: 0px;
-    color: white;
+    color: rgb(249, 245, 255);
 }
 .card h3,h4{
 
     margin: 3px;
-    color: white;
+    color: rgb(249, 245, 255);
 }
 .card i{
     margin-top: 15px;
-    color: white;
+    color: rgb(249, 245, 255);
     scale: 2;
     animation: rotate 5s linear infinite;
 }
