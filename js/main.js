@@ -1,17 +1,20 @@
 var type = "a";
+var type_two = "a";
 var times = 1;
 var wrapper = document.getElementsByClassName("wrapper");
 wrapper[0].style.maxHeight = "0px";
 var card = document.getElementsByClassName("card");
+var ftoc = document.getElementsByClassName('ftoc')
 card[0].style.backgroundColor = "transparent";
-// wrapper[0].style.maxHeight = "1px";
+
+
 //Once the DOM has loaded, we can start our script
 document.addEventListener("DOMContentLoaded",function() {
     var wrapper = document.getElementsByClassName("wrapper");
     wrapper[0].style.transition = "all 0s";
     wrapper[0].style.transition = "all 1s cubic-bezier(1, 1, 0, 0.01) 0s";
     
-    // Identify all our elements
+    // Identify all our elements on load
     const measurementValue = document.querySelector('button');
     const go_button = document.getElementsByClassName('go');
     const show_button = document.getElementsByClassName('showbtn');
@@ -30,9 +33,10 @@ document.addEventListener("DOMContentLoaded",function() {
     var yyyy = today.getFullYear();
     today = mm + '/' + dd + '/' + yyyy;
     
-    // 2 button listerners
+    // 3 button listerners
     show_button[0].addEventListener("click", showhide);
     go_button[0].addEventListener("click", getAndShowWeather);
+    ftoc[0].addEventListener("click", changeType);
     
     
     function showhide() {
@@ -62,26 +66,7 @@ document.addEventListener("DOMContentLoaded",function() {
 
             type = "a";
         }
-
-
-    
-
-        // if (card.length != 1){
-
-        //     city_name[city_name.length - 1].innerHTML = "Launceston";
-        //     high[high.length - 1].innerHTML = "High: " +  11;
-        //     low[low,length - 1].innerHTML = "Low: " +  7;
-            
-        // }
-        // else{
-        //     city_name[0].innerHTML = "Launceston";
-        //     high[0].innerHTML = "High: " +  Math.round(Math.random() * 100);
-        //     low[0].innerHTML = "Low: " +  Math.round(Math.random() * 100);
-            
-        // }
-
-        
-        };
+    };
         
     //Get and show weather
     function getAndShowWeather() {
@@ -116,7 +101,19 @@ document.addEventListener("DOMContentLoaded",function() {
     
     
         
-    } 
+    }
+    
+    //Change visible values from C to F and vice versa
+    function changeType() {
+        if(type_two == "a") {;
+            this.innerHTML = "Change to F";
+            type_two = "b";
+        }
+        else if (type_two == "b") {
+            this.innerHTML = "Change to C";
+            type_two = "a";
+        }
+    }
     
 });
 
