@@ -62,6 +62,10 @@ main{
     margin-top: 1em;
 }
 
+.ftoc{
+    font-family: "Quicksand", sans-serif;
+}
+
 .measurement{
     color: rgb(249, 245, 255);
     margin: 30px auto;
@@ -169,6 +173,26 @@ main{
     animation: rotate 5s linear infinite;
 }
 
+.high{
+    display: inline;
+}
+.val_h{
+    display: inline;
+}
+
+
+.low{
+    display: block;
+}
+.val_l{
+    display: inline;
+}
+
+.wi{
+    display: flex !important;
+    justify-content: center !important;
+}
+
 @keyframes rotate{
     0%{
         transform: rotate(0deg);
@@ -184,6 +208,10 @@ main{
     border: 1px solid rgba(255, 255, 255, 0.8);
 }
 
+
+.group{
+    display: flex;
+}
 
 max-h{
     max-height: 1500px !important;
